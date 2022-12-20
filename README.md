@@ -30,16 +30,17 @@ Não se esqueça de gerar a sua migration para atualização no banco de dados.
 **Endpoints**
 
 
-| Verbo  | Endpoint                | Parâmetro | Body          |
-|--------|-------------------------|-----------|---------------|
-| GET    | /Tarefa/{id}            | id        | N/A           |
-| PUT    | /Tarefa/{id}            | id        | Schema Tarefa |
-| DELETE | /Tarefa/{id}            | id        | N/A           |
-| GET    | /Tarefa/ObterTodos      | N/A       | N/A           |
-| GET    | /Tarefa/ObterPorTitulo  | titulo    | N/A           |
-| GET    | /Tarefa/ObterPorData    | data      | N/A           |
-| GET    | /Tarefa/ObterPorStatus  | status    | N/A           |
-| POST   | /Tarefa                 | N/A       | Schema Tarefa |
+| Verbo  | Endpoint                                                                 | Parâmetro         | Body          |
+|--------|--------------------------------------------------------------------------|-------------------|---------------|
+| GET    | [/Tarefa/{id}](Controllers/TarefaController.cs#L20)                      | id                | N/A           |
+| PUT    | [/Tarefa/{id}](Controllers/TarefaController.cs#L98)                      | id                | Schema Tarefa |
+| DELETE | [/Tarefa/{id}](Controllers/TarefaController.cs#L120)                     | id                | N/A           |
+| GET    | [/Tarefa/ObterTodos](Controllers/TarefaController.cs#L31)                | N/A               | N/A           |
+| GET    | [/Tarefa/ObterPorTitulo](Controllers/TarefaController.cs#L42)            | titulo            | N/A           |
+| GET    | [/Tarefa/ObterPorData](Controllers/TarefaController.cs#L53)              | data              | N/A           |
+| GET    | [/Tarefa/ObterPorStatus](Controllers/TarefaController.cs#L64)            | status            | N/A           |
+| GET    | [/Tarefa/ObterPorTituloOuDescricao](Controllers/TarefaController.cs#L75) | titulo\|descricao | N/A           |
+| POST   | [/Tarefa](Controllers/TarefaController.cs#L86)                           | N/A               | Schema Tarefa |
 
 Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que exigirem
 
@@ -56,3 +57,5 @@ Esse é o schema (model) de Tarefa, utilizado para passar para os métodos que e
 
 ## Solução
 O código está pela metade, e você deverá dar continuidade obedecendo as regras descritas acima, para que no final, tenhamos um programa funcional. Procure pela palavra comentada "TODO" no código, em seguida, implemente conforme as regras acima.
+
+**Resolvido!**
